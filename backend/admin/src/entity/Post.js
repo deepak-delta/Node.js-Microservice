@@ -10,29 +10,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Post = void 0;
-var typeorm_1 = require("typeorm");
-var Post = /** @class */ (function () {
-    function Post() {
-    }
-    __decorate([
-        (0, typeorm_1.PrimaryGeneratedColumn)(),
-        __metadata("design:type", Number)
-    ], Post.prototype, "id", void 0);
-    __decorate([
-        (0, typeorm_1.Column)(),
-        __metadata("design:type", String)
-    ], Post.prototype, "title", void 0);
-    __decorate([
-        (0, typeorm_1.Column)(),
-        __metadata("design:type", String)
-    ], Post.prototype, "image", void 0);
-    __decorate([
-        (0, typeorm_1.Column)({ default: 0 }),
-        __metadata("design:type", Number)
-    ], Post.prototype, "likes", void 0);
-    Post = __decorate([
-        (0, typeorm_1.Entity)()
-    ], Post);
-    return Post;
-}());
+const typeorm_1 = require("typeorm");
+let Post = class Post {
+};
+__decorate([
+    (0, typeorm_1.PrimaryGeneratedColumn)(),
+    __metadata("design:type", Number)
+], Post.prototype, "id", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", String)
+], Post.prototype, "title", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", String)
+], Post.prototype, "image", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ default: 0 }),
+    __metadata("design:type", Number)
+], Post.prototype, "likes", void 0);
+Post = __decorate([
+    (0, typeorm_1.Entity)()
+], Post);
 exports.Post = Post;

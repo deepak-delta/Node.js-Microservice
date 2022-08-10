@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var typeorm_1 = require("typeorm");
-var AppDataSource = new typeorm_1.DataSource({
+const typeorm_1 = require("typeorm");
+const AppDataSource = new typeorm_1.DataSource({
     type: 'mysql',
     host: 'localhost',
     port: 3306,

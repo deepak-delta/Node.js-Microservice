@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var typeorm_1 = require("typeorm");
-var MongoDataSource = new typeorm_1.DataSource({
+const typeorm_1 = require("typeorm");
+const MongoDataSource = new typeorm_1.DataSource({
     type: 'mongodb',
     host: 'localhost',
     database: 'userdb',
